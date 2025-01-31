@@ -1,6 +1,6 @@
 WEATHER FORECAST APPLICATION DEVELOPMENT IN JAVASCRIPT
 
-Fetched data from api using website "https://home.openweathermap.org/api_keys"
+Fetched data from api
 created a weather HTML file
 created a weather JavaScript file
 created DOM elements
