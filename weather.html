@@ -7,37 +7,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 </head>
-<body class="bg-blue-300" font-sans>
+<body class=bg-blue-300 font-sans>
 <div class="max-w-2xl mx-auto py-10 px-6">
-<h1 class="text-3xl text-center mb-4 text-bold text-orange-600">Weather Forecast</h1>
-<!--Search Form-->
-<div class="mb-6">
-<input type="text" id="cityInput" class="w-full px-4 py-2 border rounded mb-2" placeholder="Enter city name">
-<button id="searchBtn" class="w-full px-4 py-2 bg-blue-500 text-white rounded">Search by City</button>
-<button id="currentLocationBtn" class="w-full mt-2 px-4 py-2 bg-green-500 text-white rounded">Use Current Location</button>
-</div>
-<!--Dropdown for recent searches-->
-<div class="mb-4">
-<label class="text-3xl mb-5 text-yellow-300">Recent Searches:</label>
-<select id="recentCitiesDropdown" class="w-full px-4 py-2 border rounded hidden"></select>
-</div>
-<!--Weather Info-->
-<div id="weatherInfo" class="hidden text-center bg-white rounded shadow p-6">
+  <h1 class="text-3xl text-center mb-4 text-bold text-orange-600">Weather Forecast</h1>
+
+  <!-- Search Form-->
+   <div class="mb-6">
+    <input type="text" id="cityInput" class="w-full px-4 py-2 border rounded mb-2" placeholder="Enter city name">
+    <button id="searchBtn" class="w-full px-4 py-2 bg-blue-500 text-white rounded">Search by city</button>
+    <button id="currentLocationBtn" class="w-full mt-2 px-4 py-2 bg-green-500 text-white rounded">Use Current Location</button>
+   </div>
+
+   <!--Dropdown for Recent Searches -->
+   <div class="mb-4">
+    <label class="text-3xl mb-5 text-yellow-300">Recent Searches:</label>
+    <select id="recentCitiesDropdown" class="w-full px-4 py-2 border rounded hidden"></select>
+   </div>
+   <!--Weather Info -->
+   <div id="weatherInfo" class="hidden text-center bg-white rounded shadow p-6">
     <h2 class="text-2xl mb-2" id="cityName"></h2>
-    <p class="text-lg" id="temp"></p>
-    <p class="text-md" id="weatherDescription"></p>
+    <p class="=text-lg" id="temp"></p>
+    <p class="text-md"  id="weatherDescription"></p>
     <p id="humidity"></p>
     <p id="windSpeed"></p>
     <img id="weatherIcon" class="mx-auto mt-4" src="" alt="Weather Icon">
-</div>
-<!--Extended Forecast-->
-<div id="extendedForecast" class="hidden bg-white rounded shadow p-6 mt-4">
+   </div>
+   <!--Extended Forecast-->
+   <div id="extendedForecast" class="hidden bg-white rounded shadow p-6 mt-4">
     <h3 class="text-xl mb-4">5-Day Forecast</h3>
     <div id="forecastCards" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+   </div>
+   <!--Error Message-->
+   <p id="errorMsg" class="text-red-500 text-center hidden mt-4">City not found. Please try again.</p>
 </div>
-<!--Error Message-->
-<p id="errorMsg" class="text-red-500 text-center hidden mt-4">City not found. Please try again.</p>
-</div>
-<script src="weather.js"></script>
+  <script src="weather.js"></script>
 </body>
 </html>
